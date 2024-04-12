@@ -19,12 +19,11 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.explosion.Explosion;
 
 import java.util.stream.Stream;
 
 
-public class ModBlocks {
+public class LandMine {
     public static final Block LAND_MINE = registerBlock("land_mine", new CustomBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     public static final VoxelShape SHAPE = Stream.of(
@@ -51,7 +50,7 @@ class CustomBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return ModBlocks.SHAPE;
+        return LandMine.SHAPE;
     }
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {

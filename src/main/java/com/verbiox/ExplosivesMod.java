@@ -1,6 +1,7 @@
 package com.verbiox;
 
-import com.verbiox.block.ModBlocks;
+import com.verbiox.block.LandMine;
+import com.verbiox.grenades.GrenadeEntity;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,7 +13,10 @@ public class ExplosivesMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModBlocks.registerModBlocks();
-		LOGGER.info("Hello Fabric world!");
+		LandMine.registerModBlocks();
+		LOGGER.info("Loading landmine");
+		GrenadeEntity.registerModEntities();
+		LOGGER.info("Loading grenade");
+		LOGGER.info("Loaded Mod successfully!");
 	}
 }
