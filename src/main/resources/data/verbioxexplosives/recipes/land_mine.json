@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C#",
+    "SSS",
+    "DDD"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:tnt"
+    },
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "S": {
+      "item": "minecraft:spruce_planks"
+    },
+    "D": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "item": "verbioxexplosives:land_mine",
+    "count": 1
+  }
+}
